@@ -38,10 +38,10 @@ int main(int arg, char **argv) {
 			printf("failed to open output file, no sufficient access to the output file\n");
 		}
 		return 1;
-	 }
+	}
 
 	printf("-- in_fd:%d, out_fd:%d\n", fdIn, fdOut);
-	
+
 	char buffer[MAX_READ + 1];
 	ssize_t numRead;
 	numRead = read(fdIn, buffer, MAX_READ);
